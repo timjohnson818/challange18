@@ -6,8 +6,8 @@ async function getAllUsers(req, res) {
   }
   
   async function createUser(req, res) {
-    const { name , email } = req.body;
-    const newUser = await User.create({ name, email });
+    const { userName , email } = req.body;
+    const newUser = await User.create({ userName, email });
     res.json(newUser);
   }
 
